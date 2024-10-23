@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgb(253, 255, 209) ;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: green;
+    border-bottom:2px solid green ;
+    font-family: "Qwitcher Grypen", cursive;
+}
+nav a:hover::after{
+    background-color: green;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    margin-left: 10px;
+    content: '';
+}
+
+.natura{
+    font-size: 50px;
+}
+.info{
+    background:green;
+    color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: end;
+    width: 200px;
+    height: 70px;
+    position: absolute ;
+    top: 560px;
+    right: 300px;
+    font-size: 20px;
+}
+.info:hover{
+    opacity: .9;
+}
+ header a{
+   text-decoration: none;
+    color: green;
+    font-family: "Qwitcher Grypen", cursive;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+main{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.container{
+    display: flex;
+}
+main span{
+    font-size: 30px;
+}
+main p{
+    font-size: 20px;
+}
+.container img {
+width: auto;
+height: 500px;
+border-radius: 50px;
+position: relative;
+user-select: none;
+animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.product{
+    background:green;
+    padding: 10px;
+}
+.product img{
+    width: 80%;
+    height: 150px;
+    padding: 20px;
+    object-fit: cover;
+}
+.product p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product h2{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 30px;
+    margin: 0 auto;
+}
+.product input{
+    background: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+}
+.product input:hover{
+    background: rgb(205, 205, 205);
+}
